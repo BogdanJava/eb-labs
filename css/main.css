@@ -4,6 +4,17 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .sticky {
    position: fixed;
    top: 0;
@@ -154,7 +165,6 @@ header li:hover {
     background-color: #796c2e75;
     padding: 20px;
     width: fit-content;
-    margin-left: -80px;
 }
 
 .advantages__slogan_header {
@@ -171,7 +181,6 @@ header li:hover {
 .advantages__points {
     margin-top: 30px;
     position: relative;
-    left: 62px;
     top: 15px;
     padding: 15px;
     background-color: #ffffff4a;
@@ -197,6 +206,7 @@ header li:hover {
 }
 
 .video-block__title {
+    margin-left: 80px;
     text-align: left;
 }
 
@@ -208,7 +218,7 @@ header li:hover {
 
 .video-block__title p {
     font-weight: 300;
-    font-size: 25px;
+    font-size: 35px;
     display: inline;
 }
 
@@ -216,6 +226,49 @@ header li:hover {
     cursor: pointer;
     font-size: 60px;
     position: relative;
-    left: 15px;
     top: 10px;
+}
+
+.reviews {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.reviews__header {    
+    font-size: 53px;
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #000;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.reviews__human-info_name {
+    font-size: 43px;
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive;
+}
+
+.reviews__human-info_photo {
+    border-radius: 100px;
+    border: 3px solid rgba(195, 184, 184, 0.51);
+}
+
+.reviews__text {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.row-colored {
+    background-color: #a3a53826;
+}
+
+.row-primary .reviews__text {
+    border-right: 4px solid #333;
+}
+
+.row-colored .reviews__text {
+    border-left: 4px solid #333;
 }
