@@ -1,11 +1,15 @@
-/* The sticky class is added to the header with JS when it reaches its scroll position */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&subset=cyrillic');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 .sticky {
    position: fixed;
    top: 0;
    width: 100%
 }
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
    padding-top: 102px;
 }
@@ -22,7 +26,7 @@
 }
 
 .main-area {
-    background-image: url("../assets/img/bg/guitar-main-bg.jpg");
+    background-image: url("../assets/img/main/guitar-main-bg.jpg");
     background-size: cover;
     height: 512px;
     display: flex;
@@ -139,7 +143,79 @@ header li:hover {
     z-index: 999;
 }
 
+.advantages {
+    background: url('../assets/img/advantages/advantages_bg.jpg') no-repeat center center;
+    height: 400px;
+    filter: grayscale(20%);
+}
 
+.advantages__slogan {
+    margin-top: 120px;
+    background-color: #796c2e75;
+    padding: 20px;
+    width: fit-content;
+    margin-left: -80px;
+}
 
+.advantages__slogan_header {
+    color: #000;
+    font-size: 39px;
+}
 
+.advantages__slogan_text {
+    font-weight: 600;
+    font-size: 20px;
+    color: #c7c7c0cf;
+}
 
+.advantages__points {
+    margin-top: 30px;
+    position: relative;
+    left: 62px;
+    top: 15px;
+    padding: 15px;
+    background-color: #ffffff4a;
+}
+
+.advantages__points_item {
+    font-size: 35px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.video-block {
+    height: 350px;
+    background-color: #b7b79a40;
+}
+
+.video-block__title {
+    text-align: left;
+}
+
+.video-block__title h1 {
+    font-weight: 300;
+    font-size: 46px;
+    margin-bottom: -10px;
+}
+
+.video-block__title p {
+    font-weight: 300;
+    font-size: 25px;
+    display: inline;
+}
+
+.play-icon {
+    cursor: pointer;
+    font-size: 60px;
+    position: relative;
+    left: 15px;
+    top: 10px;
+}

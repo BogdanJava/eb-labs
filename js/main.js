@@ -1,14 +1,7 @@
 $(document).ready(function () {
-    // When the user scrolls the page, execute myFunction 
     window.onscroll = function () { myFunction() };
-
-    // Get the header
     var header = document.getElementById("header");
-
-    // Get the offset position of the navbar
     var sticky = header.offsetTop;
-
-    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
         if (window.pageYOffset >= sticky) {
             header.classList.add("sticky");
@@ -16,4 +9,20 @@ $(document).ready(function () {
             header.classList.remove("sticky");
         }
     }
-})
+
+    let video = document.getElementById('video')
+
+    $('#play-icon').click(() => {
+        switchIcon();
+        video.paused ? video.play() : video.pause();
+    });
+
+    video.addEventListener('ended', () => {
+        switchIcon();
+    }, false);
+
+    function switchIcon() {
+        $('#play-icon').toggleClass('fa-play-circle');
+        $('#play-icon').toggleClass('fa-pause-circle');
+    }
+});
